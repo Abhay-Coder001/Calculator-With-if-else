@@ -1,0 +1,78 @@
+// Calculator program
+// 5 options including percentage of 5 subjects which have 100 number each.
+package com.company;
+        import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        System.out.println("Choose the operation you want to perform: ");
+        Scanner user_input = new Scanner(System.in);
+        double a, b, c;
+        int option;
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. I want to calculate percentage");
+        option = user_input.nextInt();
+        System.out.println(" ");
+        if( option == 1)
+        {
+            System.out.println(" You choose the Addition operation");
+            System.out.println(" Enter the first number: ");
+            a = user_input.nextDouble();
+            System.out.println(" Enter the second number: ");
+            b= user_input.nextDouble();
+            c= a+b;
+            System.out.println("The addition of two number is : ");
+            System.out.println( c );
+        }
+        else if (option == 2)
+        {
+            System.out.println(" You choose the Subtraction operation ");
+            System.out.println(" Enter the first number: ");
+            a= user_input.nextDouble();
+            System.out.println(" Enter the second number: ");
+            b= user_input.nextDouble();
+            c= a-b;
+            System.out.println("The subtraction of two number is: ");
+            System.out.println(c);
+        }
+        else if ( option == 3)
+        {
+            System.out.println(" You choose the multiplication ");
+            System.out.println(" Enter the first number: ");
+            a= user_input.nextDouble();
+            System.out.println(" Enter the second number: ");
+            b= user_input.nextDouble();
+            c= a*b;
+            System.out.println("The multiplication of two number is: ");
+            System.out.println(c);
+        }
+        else if ( option == 4 )
+        {
+            System.out.println(" You choose division");
+            System.out.println(" Enter the first number: ");
+            a= user_input.nextDouble();
+            System.out.println(" Enter the second number: ");
+            b= user_input.nextDouble();
+            c= a/b;
+            System.out.println("The division of two number: ");
+            System.out.println(c);
+        }
+        else if ( option == 5 )
+        {
+            System.out.println(" You choose percentage ");
+            System.out.println("  Enter the total obtained marks of your 5 subjects: ");
+            a = user_input.nextDouble();
+            c =(a*100)/500;
+            System.out.println(" Your percentage is : ");
+            System.out.println( c );
+        }
+        else
+        {
+            System.out.println(" Please check!  You choose a valid number between 1 - 5");
+        }
+    }
+}
